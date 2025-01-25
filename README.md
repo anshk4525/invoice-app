@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Here's a sample README for your project:
 
-## Getting Started
+---
 
-First, run the development server:
+# Invoice Generator and Email Sender
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This project is designed to help users create invoices and send them via email using a modern tech stack. Built with **Next.js**, **Tailwind CSS**, **Mailtrap**, **Auth.js**, and **Shadcn**, it provides a simple and efficient way to generate invoices and send them securely to an email address.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Invoice Creation**: Generate customized invoices with details like item descriptions, quantities, and prices.
+- **Email Sending**: Automatically send the generated invoice to a specified email address.
+- **Authentication**: Secure login and user management with **Auth.js** to ensure that only authorized users can create and send invoices.
+- **Responsive Design**: The UI is built using **Tailwind CSS** for a sleek, mobile-friendly experience.
+- **Shadcn Integration**: Utilizing **Shadcn** components to provide a user-friendly interface.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Tech Stack
 
-## Learn More
+- **Next.js**: A React framework for building the server-rendered web applications.
+- **Mailtrap**: An email testing tool to simulate and debug email sending before going live.
+- **Tailwind CSS**: A utility-first CSS framework for building custom designs without writing custom styles.
+- **Auth.js**: Used for handling authentication, ensuring that only authenticated users can access the features.
+- **Shadcn**: A modern component library to speed up UI development.
 
-To learn more about Next.js, take a look at the following resources:
+## Setup
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone the repository:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   git clone <repository-url>
+   ```
 
-## Deploy on Vercel
+2. Install dependencies:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. Set up environment variables:
+   - Create a `.env.local` file in the root of the project and add the following:
+     ```bash
+     NEXT_PUBLIC_MAILTRAP_USER=<your-mailtrap-username>
+     NEXT_PUBLIC_MAILTRAP_PASS=<your-mailtrap-password>
+     NEXT_PUBLIC_AUTH_SECRET=<your-auth-secret>
+     ```
+
+4. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+   Your app should now be running at `http://localhost:3000`.
+
+## Usage
+
+1. Log in using **Auth.js** to access the invoice creation page.
+2. Fill in the necessary details for the invoice.
+3. Once the invoice is generated, you can send it to an email using the integrated Mailtrap functionality.
+
+## Contributing
+
+Feel free to fork the repository and create pull requests. Contributions are always welcome.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
